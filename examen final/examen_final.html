@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const correo = prompt("ingrese su correo");
+        let contraseña = prompt("ingrese su contraseña");
+
+if ((correo.charAt(0) >= `0`&& correo.charAt(0 ) <= `9`)||correo.charAt(0) === `` ||!correo.endswith(`cumbre.edu.bo`)) {
+const randomNumber = Math.floor(Math.random() * 11);
+const fechaactual = new Date().toLocaleString();
+let mensajec = `correo no valido. vuelva a internarlo en ${randomNumber} seg. ${fechaactual}`;
+alert(mensajec);
+}else{
+    mensajec = `el correo electronico es valido.`;
+}
+
+if (contraseña.length <= 8 || !contraseña.startsWith(`$`) || !contraseña.startsWith(`*`)) {
+    let mensajep= `contrase debil. vuelva a intenterlo`;
+    alert (mensajep);
+} else{
+    mensajep = `la contraseña es valida. `;    
+};
+
+const agregarpost = confirm(`¿desea ingresar un post?`);
+if (agregarpost){
+
+}
+
+    
+
+
+    </script>
+</body>
+</html>
